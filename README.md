@@ -315,7 +315,6 @@ Estas clases permiten centralizar lógica común y facilitar tareas como el proc
 | `IngredientStemmer.java` | Realiza stemming y normalización de ingredientes para mejorar coincidencias |
 | `IngredientTranslator.java` | Traduce ingredientes entre distintos idiomas para mejorar la búsqueda y compatibilidad |
 | `RestrictionChecker.java` | Comprueba restricciones alimentarias o incompatibilidades en recetas |
-| `foodon.owl` | Ontología alimentaria utilizada para procesamiento semántico y relaciones entre ingredientes |
 
 Estas utilidades ayudan a mantener el sistema modular y evitan duplicación de código entre agentes y behaviours.
 
