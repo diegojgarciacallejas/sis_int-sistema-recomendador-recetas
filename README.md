@@ -388,9 +388,6 @@ Las principales dependencias utilizadas son:
 |---|---|
 | `jade.jar` | Framework principal para el desarrollo del sistema multiagente |
 | `gson-2.10.1.jar` | Procesamiento y manejo de archivos JSON |
-| `owlapi-distribution-3.5.6.jar` | Gestión y procesamiento de ontologías OWL |
-| `guava-18.0.jar` | Librería auxiliar de utilidades para Java |
-| `trove4j-3.0.3.jar` | Optimización de estructuras de datos y colecciones |
 
 En IntelliJ IDEA:
 
