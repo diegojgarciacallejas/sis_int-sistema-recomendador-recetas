@@ -2,7 +2,6 @@
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![JADE](https://img.shields.io/badge/JADE-Multiagent-green?style=for-the-badge)
-![Maven](https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 Sistema multiagente desarrollado en **Java** con **JADE** para recomendar recetas a partir de los ingredientes disponibles y las preferencias del usuario.
