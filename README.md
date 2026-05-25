@@ -377,11 +377,21 @@ File → Project Structure → Project SDK
 
 ### 4. Cargar dependencias
 
-El proyecto incluye librerías dentro de la carpeta:
+El proyecto incluye librerías externas necesarias para el funcionamiento del sistema dentro de la carpeta:
 
 ```text
-libs
+/libs
 ```
+
+Las principales dependencias utilizadas son:
+
+| Librería | Función |
+|---|---|
+| `jade.jar` | Framework principal para el desarrollo del sistema multiagente |
+| `gson-2.10.1.jar` | Procesamiento y manejo de archivos JSON |
+| `owlapi-distribution-3.5.6.jar` | Gestión y procesamiento de ontologías OWL |
+| `guava-18.0.jar` | Librería auxiliar de utilidades para Java |
+| `trove4j-3.0.3.jar` | Optimización de estructuras de datos y colecciones |
 
 En IntelliJ IDEA:
 
@@ -420,20 +430,41 @@ ExternalAgent
 
 ## 🍝 Ejemplo de uso
 
-El usuario introduce ingredientes en la interfaz:
+### Entrada del usuario
+
+El usuario introduce los siguientes datos en la interfaz gráfica:
+
+| Campo | Ejemplo |
+|---|---|
+| Ingredientes | `tomato, pasta, cheese` |
+| Cantidades | `tomato:200, pasta:250, cheese:100` |
+| Número de personas | `2` |
+| Tiempo máximo | `45` min |
+| Restricciones dietéticas | `vegetarian` |
+
+---
+
+### Resultado
+
+El sistema devuelve una lista de recetas recomendadas ordenadas por puntuación final:
 
 ```text
-tomato, pasta, cheese
+🏆 Ranking de recetas recomendadas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#1 Pasta Carbonara
+   ✓ Great match: you have over 65% of the required ingredients.
+   ⏱ 25 min  👤 2 servings  ❤ Health: 74/100
+
+#2 Pizza Margarita
+   ~ Acceptable match: you share some key ingredients.
+   ⏱ 40 min  👤 2 servings  ❤ Health: 68/100
+
+#3 Lasagna
+   ~ Acceptable match: you share some key ingredients.
+   ⏱ 45 min  👤 4 servings  ❤ Health: 61/100
 ```
-
-El sistema procesa la petición y devuelve una lista de recetas recomendadas ordenadas por puntuación:
-
-```text
-1. Pasta Carbonara
-2. Pizza Margarita
-3. Lasagna
-```
-
 ---
 
 ## 📊 Modelos principales
