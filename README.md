@@ -2,7 +2,6 @@
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![JADE](https://img.shields.io/badge/JADE-Multiagent-green?style=for-the-badge)
-![Maven](https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 Sistema multiagente desarrollado en **Java** con **JADE** para recomendar recetas a partir de los ingredientes disponibles y las preferencias del usuario.
@@ -13,6 +12,7 @@ El sistema se basa en una arquitectura distribuida donde distintos agentes colab
 ## 🎯 Objetivo del proyecto
 
 El objetivo de este proyecto es aplicar conceptos de sistemas multiagente utilizando JADE para construir un recomendador inteligente de recetas capaz de colaborar mediante agentes especializados y procesamiento semántico.
+
 ---
 
 ## ✨ Características principales
@@ -35,7 +35,7 @@ El objetivo de este proyecto es aplicar conceptos de sistemas multiagente utiliz
 
 - Java
 - JADE
-- Maven
+- IntelliJ IDEA
 - Gson
 - Spoonacular API
 - FoodOn Ontology
@@ -477,7 +477,20 @@ El proyecto incluye clases de modelo para representar información utilizada dur
 | `RecipeScore` | Representa la puntuación asociada a una receta |
 
 ---
+## ⚠️ Dificultades en el desarrollo
 
+Durante el desarrollo del proyecto surgieron distintas dificultades técnicas, especialmente relacionadas con el uso de APIs externas.
+
+La principal limitación encontrada fue el uso de la versión gratuita de la API de Spoonacular, la cual presenta restricciones importantes:
+
+- El límite disponible es de aproximadamente **50 llamadas diarias**.
+- Cada búsqueda realizada desde la interfaz principal consume alrededor de **4 llamadas** debido a las diferentes consultas necesarias para obtener recetas, información nutricional y datos adicionales.
+- Algunas funcionalidades concretas del `ExternalAgent` también realizan llamadas adicionales a la API.
+- Debido a estas restricciones, las pruebas continuas y la depuración del sistema se vieron limitadas en determinados momentos del desarrollo.
+
+Estas limitaciones obligaron a optimizar el número de peticiones realizadas y dificultaron realizar pruebas intensivas durante algunas fases del proyecto.
+
+---
 ## 🔮 Posibles mejoras futuras
 
 Aunque las posibilidades de mejora del sistema son amplias, algunas posibles líneas futuras de desarrollo serían:
