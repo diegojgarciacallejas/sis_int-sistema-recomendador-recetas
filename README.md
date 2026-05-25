@@ -511,6 +511,7 @@ Principalmente nos ha ayudado en:
 - Crear una primera versión de la interfaz gráfica, porque no teníamos muchas bases de frontend o desarrollo visual.
 - Depurar errores propios del desarrollo en Java.
 - Entender mensajes de error y posibles soluciones.
+- Ayudar en el desarrollo de la ontología y relaciones semánticas.
 - Mejorar la organización inicial del código y del README.
 
 La IA no sustituye el trabajo del grupo, sino que se ha usado como apoyo para aprender, resolver dudas y acelerar tareas puntuales del desarrollo.
