@@ -35,7 +35,7 @@ El objetivo de este proyecto es aplicar conceptos de sistemas multiagente utiliz
 
 - Java
 - JADE
-- Maven
+- IntelliJ IDEA
 - Gson
 - Spoonacular API
 - FoodOn Ontology
